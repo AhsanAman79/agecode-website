@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt & Anfahrt · AGECODE Longevity Frankfurt · Schmidtstr. 51</title>
+<meta name="description" content="Kontaktieren Sie AGECODE in Frankfurt am Main, Schmidtstr. 51. Vereinbaren Sie ein vertrauliches Erstgespräch für Longevity-Diagnostik, Cardiovascular Twin, IV-Therapie und regenerative Medizin.">
+<meta name="keywords" content="AGECODE Kontakt, Longevity Frankfurt Termin, Privatpraxis Frankfurt Schmidtstraße, Anfahrt Longevity Center Frankfurt">
+<link rel="canonical" href="https://www.agecode.de/kontakt.html">
+<meta property="og:title" content="Kontakt & Anfahrt · AGECODE Frankfurt">
+<meta property="og:description" content="Vereinbaren Sie Ihr vertrauliches Erstgespräch bei AGECODE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .form{display:grid;gap:18px}
+  .form .row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .field label{display:block;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-dim);margin-bottom:.5rem}
+  .field input,.field select,.field textarea{
+    width:100%;background:var(--bg-soft);border:1px solid var(--line-soft);color:var(--ink);
+    border-radius:10px;padding:14px 16px;font-family:var(--sans);font-size:.98rem;transition:border-color .3s}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold)}
+  .field textarea{min-height:130px;resize:vertical}
+  .consent{display:flex;gap:12px;align-items:flex-start;font-size:.86rem;color:var(--ink-mut)}
+  .consent input{margin-top:4px;accent-color:var(--gold)}
+  .contact-side .item{margin-bottom:1.8rem}
+  .contact-side h5{font-family:var(--sans);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:.5rem}
+  .contact-side p,.contact-side a{color:var(--ink-mut);font-size:1rem}
+  .contact-side a:hover{color:var(--gold)}
+  @media (max-width:760px){.form .row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="index.html"><b>AGE<span>CODE</span></b><small>Longevity Clinic · Frankfurt</small></a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <div class="has-sub">
+        <a href="index.html#leistungen">Leistungen</a>
+        <div class="sub">
+          <a href="diagnostik.html"><b>Longevity-Diagnostik</b><em>Biological Age & Deep Profiling</em></a>
+          <a href="cardiovascular-twin.html"><b>Cardiovascular Twin</b><em>KI-Herz-Kreislauf-Analyse</em></a>
+          <a href="infusionstherapie.html"><b>IV-Infusionstherapie</b><em>Micronutrient Lounge</em></a>
+          <a href="regeneration.html"><b>Regenerative Medizin</b><em>NAD⁺, HBOT, Biohacking</em></a>
+          <a href="aesthetik.html"><b>Ästhetische Medizin</b><em>Natural Aesthetics</em></a>
+        </div>
+      </div>
+      <a href="membership.html">Membership</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a class="btn btn-gold" href="kontakt.html">Termin anfragen</a>
+    </nav>
+    <button class="burger" aria-label="Menü"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="phero">
+  <div class="phero-bg"></div>
+  <div class="wrap">
+    <div class="crumbs reveal"><a href="index.html">AGECODE</a> · Kontakt</div>
+    <span class="eyebrow reveal">Kontakt & Anfahrt</span>
+    <h1 class="reveal d1">Ihr erster Schritt <span class="gold-text">zu uns.</span></h1>
+    <p class="lead reveal d2">Hinterlassen Sie uns eine Nachricht — diskret und unverbindlich. Unser Concierge meldet sich zeitnah persönlich bei Ihnen.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap split">
+    <div class="reveal">
+      <form class="form" onsubmit="return aurumSubmit(event)">
+        <div class="row">
+          <div class="field"><label for="fn">Vorname</label><input id="fn" name="fn" type="text" autocomplete="given-name" required></div>
+          <div class="field"><label for="ln">Nachname</label><input id="ln" name="ln" type="text" autocomplete="family-name" required></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="em">E-Mail</label><input id="em" name="em" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="ph">Telefon</label><input id="ph" name="ph" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="topic">Interesse</label>
+          <select id="topic" name="topic">
+            <option>Erstgespräch / Longevity-Diagnostik</option>
+            <option>Cardiovascular Twin</option>
+            <option>IV-Infusionstherapie</option>
+            <option>Regenerative Medizin</option>
+            <option>Ästhetische Medizin</option>
+            <option>Private Membership</option>
+          </select>
+        </div>
+        <div class="field"><label for="msg">Ihre Nachricht</label><textarea id="msg" name="msg" placeholder="Wie können wir Sie unterstützen?"></textarea></div>
+        <label class="consent"><input type="checkbox" required> Ich habe die <a href="datenschutz.html">Datenschutzhinweise</a> gelesen und willige in die Verarbeitung meiner Daten zur Kontaktaufnahme ein.</label>
+        <button class="btn btn-gold" type="submit" style="justify-self:start">Anfrage senden <span class="arw">→</span></button>
+      </form>
+      <p style="font-size:.82rem;color:var(--ink-dim);margin-top:1rem">Hinweis: Dieses Formular ist ein Demonstrations-Frontend. Für den Live-Betrieb wird es an einen datenschutzkonformen Versand-/CRM-Dienst angebunden.</p>
+    </div>
+    <div class="contact-side reveal d1">
+      <div class="item"><h5>Adresse</h5><p>AGECODE · Longevity & Regenerative Medicine<br>Schmidtstr. 51<br>Frankfurt am Main · Mainhattan</p></div>
+      <div class="item"><h5>E-Mail</h5><a href="mailto:concierge@agecode.de">concierge@agecode.de</a></div>
+      <div class="item"><h5>Telefon</h5><a href="tel:+4969000000">+49 (0)69 · nach Vereinbarung</a></div>
+      <div class="item"><h5>Termine</h5><p>Ausschließlich nach Vereinbarung.<br>Selbstzahler & Privatpatienten (PKV).</p></div>
+      <div class="split-media" style="aspect-ratio:16/11;margin-top:1rem"><img src="assets/frankfurt.jpg" alt="Lage in Frankfurt Mainhattan"><span class="frame"></span></div>
+    </div>
+  </div>
+</section>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div><a class="brand" href="index.html"><b>AGE<span>CODE</span></b><small>Longevity Clinic · Frankfurt</small></a>
+        <p class="addr">Longevity & Regenerative Medicine<br>Schmidtstr. 51 · Frankfurt am Main<br>Mainhattan, Hessen</p></div>
+      <div><h5>Leistungen</h5><ul>
+        <li><a href="diagnostik.html">Longevity-Diagnostik</a></li>
+        <li><a href="cardiovascular-twin.html">Cardiovascular Twin</a></li>
+        <li><a href="infusionstherapie.html">IV-Infusionstherapie</a></li>
+        <li><a href="regeneration.html">Regenerative Medizin</a></li>
+        <li><a href="aesthetik.html">Ästhetische Medizin</a></li></ul></div>
+      <div><h5>AGECODE</h5><ul>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a href="membership.html">Private Membership</a></li>
+        <li><a href="kontakt.html">Kontakt & Anfahrt</a></li></ul></div>
+      <div><h5>Rechtliches</h5><ul>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li></ul></div>
+    </div>
+    <div class="ftr-bot">
+      <span>© <span data-year>2026</span> AGECODE · Longevity & Regenerative Medicine.</span>
+      <span>Privatärztliche Leistungen · Selbstzahler & PKV</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  function aurumSubmit(e){
+    e.preventDefault();
+    alert("Vielen Dank. Im Live-Betrieb wird Ihre Anfrage sicher an unseren Concierge übermittelt.");
+    return false;
+  }
+</script>
+</body>
+</html>
