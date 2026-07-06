@@ -1,180 +1,146 @@
-# AGECODE Longevity Clinic — Bild-Prompts für Midjourney
+# AGECODE Longevity Clinic — Bild-Prompts für Midjourney (klinische Ausrichtung)
 
-Diese Prompts erzeugen die Motive für die Website im einheitlichen Stil (warmes Elfenbein + Salbei-/Eukalyptusgrün, ruhig, elegant, editorial).
+Motive für eine **medizinische Klinik für Verjüngung & Lebensverlängerung** — bewusst **kein Wellness/Spa**. Klinisch, präzise, professionell.
 
 **Anwendung:**
-1. Prompt in Midjourney einfügen (getestet für v6.1).
+1. Prompt in Midjourney einfügen (v6.1).
 2. Bild generieren, herunterladen.
-3. Datei unter dem angegebenen **Dateinamen** speichern und in `website/assets/` ablegen (vorhandene Datei ersetzen).
+3. Unter dem angegebenen **Dateinamen** in `website/assets/` ablegen (vorhandene Datei ersetzen).
 
-**Einheitlicher Stil-Baustein** (ist in jedem Prompt enthalten):
-`soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, medium format look, shallow depth of field, ultra detailed, no text, no logo`
+**Einheitlicher Stil-Baustein** (in jedem Prompt enthalten):
+`modern high-end private medical clinic, clean clinical design, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed`
 
-**Seitenverhältnisse** sind pro Bild passend zum Layout gesetzt (`--ar`). Für konsistenten Fotolook ist `--style raw` gesetzt.
+**Negativ (Wellness ausschließen):** an jeden Prompt angehängt:
+`--no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel`
+
+**Parameter:** Seitenverhältnis pro Slot (`--ar`), fotografischer Look (`--style raw`), `--v 6.1`.
 
 ---
 
-## 1 · Hero (Vollbild ganz oben)
-
+## 1 · Hero (Vollbild)
 **`hero.jpg`**
 ```
-serene minimalist luxury longevity clinic lounge interior, soft water reflection and subtle greenery, floor to ceiling windows, tranquil atmosphere, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, medium format look, shallow depth of field, ultra detailed, no text, no logo --ar 16:9 --style raw --v 6.1
+interior of a modern high-end private longevity and rejuvenation medical clinic, advanced diagnostic technology and examination area, serious and precise, modern high-end private medical clinic, clean clinical design, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 16:9 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
----
 
 ## 2 · Startseite — Kompetenzfelder & Signature
-
 **`diagnostik.jpg`**
 ```
-elegant medical diagnostics laboratory, blood sample vials and a microscope on a clean surface, bright and precise, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, medium format look, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+advanced medical diagnostics laboratory, blood sample analysis, centrifuge and analyzer, lab technician in white coat, clinical precision, modern high-end private medical clinic, clean clinical design, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`cardio.jpg`**
 ```
-abstract elegant visualization of a human heart and vascular network, soft glowing translucent lines, scientific yet artful, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+cardiologist reviewing a detailed cardiovascular scan and ECG waveforms on high resolution monitors, medical technology, modern high-end private medical clinic, clean clinical design, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`iv.jpg`**
 ```
-elegant IV infusion drip bag on a slim stand in a calm private wellness lounge, soft light, refined interior, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, medium format look, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+clinical infusion therapy room with an IV stand and patient monitor, professional medical treatment room, modern high-end private medical clinic, clean clinical design, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
 
----
-
-## 3 · IV-Infusionstherapie (Drips)
-
+## 3 · IV-Infusionstherapie
 **`nad.jpg`**
 ```
-close up of an intravenous drip with a softly glowing molecular structure motif, elegant and clinical, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+intravenous infusion in a clinical setting, close up of cannula and IV line on an arm, medical grade, precise, modern high-end private medical clinic, clean clinical design, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`glutathione.jpg`**
 ```
-elegant glass vial holding green botanical essence, antioxidant concept, dewy and pure, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, macro, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+sterile clinical preparation of an infusion, gloved hands holding a medical vial and syringe, laboratory, modern high-end private medical clinic, clean clinical design, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`vitaminc.jpg`**
 ```
-elegant vitamin infusion still life with fresh citrus and bright light, clean and fresh, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+high dose vitamin infusion bag on a stand in a clinical treatment room, medical equipment, modern high-end private medical clinic, clean clinical design, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`betterage.jpg`**
 ```
-serene elegant person with radiant healthy skin, soft flattering spa portrait, timeless and calm, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, medium format look, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+physician performing an anti aging longevity health assessment on a patient with a medical diagnostic device, clinical consultation, modern high-end private medical clinic, clean clinical design, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`energy.jpg`**
 ```
-abstract flowing ribbons of energy and light in soft green and warm gold, vitality concept, graceful motion, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+scientific microscopic visualization of cellular mitochondria and ATP energy production, clinical research imagery, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high detail, sharp focus --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`beauty.jpg`**
 ```
-elegant skincare and glowing skin, minimalist beauty spa still life with a single dewy droplet, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, macro, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+clinical dermatology skin rejuvenation treatment close up with a medical device, professional aesthetic medicine, modern high-end private medical clinic, clean clinical design, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
 
----
-
-## 4 · Regenerative Medizin & Biohacking
-
+## 4 · Regenerative Medizin
 **`regeneration.jpg`**
 ```
-serene regenerative wellness therapy room with soft light and refined furnishings, calm and restorative, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+modern regenerative medicine treatment room with advanced medical devices, clinical and professional, modern high-end private medical clinic, clean clinical design, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`cryo.jpg`**
 ```
-modern cryotherapy chamber with soft cold mist in an elegant clinic, sleek and calm, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+medical whole body cryotherapy chamber in a modern clinic, clinical setting, professional, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`ihht.jpg`**
 ```
-elegant altitude breathing training session, a person reclining calmly with a soft breathing mask, serene wellness, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+hypoxia altitude training medical device with breathing mask and monitor in a clinic, clinical, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`redlight.jpg`**
 ```
-soft red light therapy panel glowing warmly in a calm elegant treatment room, gentle ambience, soft eucalyptus sage green and warm ivory colour palette accents, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+medical red light therapy device with glowing panels in a clinical treatment room, professional, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`hbot.jpg`**
 ```
-sleek hyperbaric oxygen chamber in an elegant minimalist clinic, clean lines and soft light, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+medical hyperbaric oxygen therapy chamber in a modern clinic, clinical and professional, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`lymph.jpg`**
 ```
-elegant lymphatic compression therapy in a calm wellness studio, refined and serene, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+medical lymphatic compression therapy device applied to a patient in a clinical treatment room, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`pemf.jpg`**
 ```
-calm grounding magnetic field therapy mat laid out in a serene minimalist room, tranquil, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+pulsed magnetic field therapy medical device in a clinical treatment room, professional, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`mms.jpg`**
 ```
-elegant body toning and muscle wellness studio, minimalist and calm, refined equipment, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+electromagnetic muscle stimulation medical device treatment in a clinical setting, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`pelvic.jpg`**
 ```
-serene person practicing core and pelvic wellness in an elegant studio, fully clothed, graceful and calm, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+pelvic floor magnetic stimulation medical therapy chair in a clinical treatment room, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`breath.jpg`**
 ```
-a person doing calm breathwork meditation in soft natural light, peaceful and centered, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+guided respiratory therapy with medical monitoring equipment in a clinic, clinical, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`bone.jpg`**
 ```
-elegant abstract visualization of strong healthy bone microstructure and minerals, soft translucent detail, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+bone density measurement using a medical ultrasound scanner, clinical diagnostic procedure, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
----
 
 ## 5 · Ästhetik & Hautanalyse
-
 **`hautanalyse.jpg`**
 ```
-elegant digital skin analysis, close up of radiant facial skin with subtle clean tech overlay, precise and refined, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+professional dermatological skin analysis using a medical imaging device, close up, clinical, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`aesthetics.jpg`**
 ```
-elegant non-invasive aesthetic facial treatment in a luxury clinic, serene client, refined hands and instruments, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+clinical aesthetic medicine, physician performing a non invasive facial rejuvenation procedure with a medical device, professional, modern high-end private medical clinic, clean clinical design, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
----
 
 ## 6 · Interieur & Standort (Hochformat)
-
 **`suite.jpg`**
 ```
-private luxury clinic suite interior, elegant furniture and soft greenery, warm and calm, portrait composition, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, medium format look, shallow depth of field, ultra detailed, no text, no logo --ar 4:5 --style raw --v 6.1
+elegant private clinical treatment room with an examination table and modern medical equipment, professional, modern high-end private medical clinic, clean clinical design, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:5 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`membership.jpg`**
 ```
-elegant private members lounge interior, warm ivory and sage green tones, refined seating and soft lighting, luxury and calm, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, shallow depth of field, ultra detailed, no text, no logo --ar 4:3 --style raw --v 6.1
+elegant private medical consultation room in a high end clinic, professional and modern, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:3 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`about.jpg`**
 ```
-elegant bright clinic reception and interior with subtle greenery, minimalist luxury, welcoming and serene, portrait composition, soft eucalyptus sage green and warm ivory colour palette, calm natural daylight, elegant minimalist luxury, editorial photography, medium format look, shallow depth of field, ultra detailed, no text, no logo --ar 4:5 --style raw --v 6.1
+modern private medical clinic reception and interior, clean clinical design, professional and elegant, clinical white with graphite and crimson red accents, bright professional lighting, photorealistic, high-end medical photography, sharp focus, highly detailed --ar 4:5 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
-
 **`frankfurt.jpg`**
 ```
-Frankfurt Germany skyline at soft misty dawn, elegant muted calm tones, distant towers in gentle haze, refined and tranquil, warm ivory and soft sage green atmosphere, calm natural daylight, elegant minimalist luxury, editorial photography, ultra detailed, no text, no logo --ar 4:5 --style raw --v 6.1
+Frankfurt Germany financial district skyline, modern towers, clear professional daylight, sharp and refined, photorealistic, high detail --ar 4:5 --style raw --v 6.1 --no spa, wellness, candles, towels, incense, meditation, flowers, calm pastel
 ```
 
 ---
 
 ### Hinweise
-- Für Personen-Motive (`betterage`, `pelvic`, `breath`, `aesthetics`, `hautanalyse`) vor Veröffentlichung prüfen, dass keine irritierenden Bilddetails entstehen (Hände, Gesichter).
-- Alternativ zu `--v 6.1` funktioniert auch `--v 7`; `--style raw` sorgt für den fotografischen, weniger „künstlerischen" Look.
-- Für stärkere Bildschärfe optional `--q 2` ergänzen.
-- Dateinamen exakt beibehalten, damit die Website die Bilder ohne weitere Anpassung übernimmt (`website/assets/<name>.jpg`).
+- Ziel-Anmutung: **medizinische Klinik**, nicht Wellness. Bei Personen (Arzt/Patient) auf professionelle, klinische Darstellung achten.
+- `--style raw` + `--no`-Liste halten das Ergebnis nüchtern-klinisch.
+- Für mehr Schärfe optional `--q 2`; alternativ `--v 7`.
+- Dateinamen exakt beibehalten (`website/assets/<name>.jpg`), damit die Website die Bilder ohne Anpassung übernimmt.
