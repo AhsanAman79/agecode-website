@@ -67,7 +67,7 @@ p strong{color:var(--ink);font-weight:600}
 
 /* ---------- Layout ---------- */
 .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--pad)}
-section{padding-block:clamp(58px,9vw,126px)}
+section{padding-block:clamp(40px,6vw,84px)}
 .divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);border:0}
 
 /* ---------- Buttons ---------- */
@@ -147,7 +147,7 @@ section{padding-block:clamp(58px,9vw,126px)}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
 
 /* ---------- Section head ---------- */
-.sec-head{max-width:64ch;margin-bottom:clamp(38px,5vw,66px)}
+.sec-head{max-width:64ch;margin-bottom:clamp(28px,4vw,50px)}
 .sec-head.center{margin-inline:auto;text-align:center}
 .sec-head.center .lead{margin-inline:auto}
 
